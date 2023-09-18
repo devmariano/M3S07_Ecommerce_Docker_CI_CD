@@ -1,0 +1,40 @@
+.promo-home{
+padding-top: 150px;
+}
+
+.promo-section {
+  margin-bottom: 40px; 
+}
+
+.promo-title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.productsHome {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px; 
+
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 100%; 
+  height: auto; 
+}
+
+@media (max-width: 768px) {
+  .productsHome {
+    padding: 30px 30px 50px;
+  }
+}

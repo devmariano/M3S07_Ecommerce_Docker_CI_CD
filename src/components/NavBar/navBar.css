@@ -1,0 +1,29 @@
+.navbar {
+  background-color: #FC6B0F;
+  position:fixed;
+  width: 100%;
+}
+
+.navbar > div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: left;
+}
+
+.nav-button {
+  color: rgba(255,255,255,0.9);
+  font-weight: 700;
+  background-color: #FC6B0F;
+  border: none;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  padding: 7px 24px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #E35214;
+  color: white;
+}
+
+

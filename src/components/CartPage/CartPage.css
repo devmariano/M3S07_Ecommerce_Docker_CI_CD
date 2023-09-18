@@ -1,0 +1,125 @@
+.cart-page {
+  display: flex;
+  flex-direction: column; 
+  padding-top: 30px;
+  padding-bottom: 130px;
+}
+
+.cart-info{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 170px;
+  padding-left: 10px;
+  display: flex;
+  font-size: 1rem;
+  color:rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+
+.cart-info-detail{
+  color:rgb(0, 58, 106);
+}
+
+.cart-resume-list{
+  padding-top: 30px;
+  gap:20px;
+}
+
+.cart-resume-list .cart-item:last-child{
+  border-bottom: none;
+}
+
+.cart-resume-title{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.cart-resume-price{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 30px;
+  color: rgb(31, 144, 80);
+  background-color: rgb(229, 255, 241);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.cart-box-list{
+  background-color: white;
+  min-width: 64%;
+  padding:3rem;
+  margin:0.5rem;
+}
+
+.cart-box-action{
+  background-color: white;
+  min-width: 34%;
+  padding:3rem;
+  margin:0.5rem;
+}
+
+.cart_page_buttons{
+  display: flex;
+  flex-direction:column; 
+  padding-top: 2rem;
+  border-top: 1px solid #ddd;
+  gap:1.5rem;
+}
+
+.checkout-button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgba(255,255,255,0.9);
+  font-weight: 700;
+  background-color: #FC6B0F;
+  border: none;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  padding: 12px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.checkout-button:hover {
+  background-color: #ed8d26;
+  border:none;
+  outline: #ed8d26 solid 1px;
+  color: white;
+}
+
+.return-button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #FC6B0F;
+  font-weight: 700;
+  background-color: none;
+  outline: #FC6B0F solid 2px;
+  border: none;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  padding: 12px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.return-button:hover {
+  outline: #ed8d26 solid 2px;
+  border:none;
+  background-color: #ed8d26;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .cart-page {
+    flex-direction: row;
+  }
+  .cart-box{
+    margin:0;
+  }
+  .cart-info{
+  font-size: 1.3rem;
+  }
+}
