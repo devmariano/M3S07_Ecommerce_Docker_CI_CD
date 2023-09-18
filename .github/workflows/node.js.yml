@@ -5,9 +5,9 @@ name: Node.js CI --Nome do script
 
 on:
   push:
-    branches: [ "main"]
+    branches: [ "master"]
   pull_request:
-    branches: [ "main"]
+    branches: [ "master"]
 
 jobs:
   construcao:
@@ -21,4 +21,4 @@ jobs:
           node-version: 18.x
           cache: 'npm'
       - run: npm i
-      - run: npm run build 
+      - run: npm run build --fix
