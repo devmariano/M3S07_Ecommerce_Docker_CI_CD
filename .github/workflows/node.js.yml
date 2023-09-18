@@ -4,8 +4,6 @@
 name: Node.js CI --Nome do script
 
 on:
-  push:
-    branches: [ "master"]
   pull_request:
     branches: [ "master"]
 
@@ -21,4 +19,26 @@ jobs:
           node-version: 18.x
           cache: 'npm'
       - run: npm i
-      - run: npm run build 
+      - run: npm run build
+  deploy: 
+    runs-on: ubuntu-latest
+    name: deploy cd 
+    needs: construcao
+    steps: 
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+    
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: alexandremariano
+          password: dckr_pat_XANoqz18avQR-v2aTk-xZ0bdvvA
+    
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          push: true
+          tags: alexandremariano/front-e-commerce
