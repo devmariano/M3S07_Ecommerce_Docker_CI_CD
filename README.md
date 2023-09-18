@@ -1,3 +1,27 @@
+# Corrigir problema "Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style"
+na linah de comando
+git config --global core.autocrlf true
+
+adicionar na raiz o arquivo .gitatributes com o seguinte script:
+* text=auto eol=crlf
+
+para CI configurar um action yml de node.js no github para executar antes do pull
+
+# Docker:
+para gerar a iamgem docker execute
+docker build -t alexandremariano/front_e-commerce .  "trocar pelo nome da imagem desejada"
+
+para rodar o docker em um container execute
+
+docker images    "para verificar se a imagem esta presente e seu nome"
+
+docker run -d -p 80:80 --name teste alexandremariano/front-e-commerce 
+
+acesse o localhost e verifique se esta rodando
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
