@@ -3,7 +3,6 @@ const formatCurrency = (value, currency) => {
     style: 'currency',
     currency,
   });
-
 };
 
 export default formatCurrency;
